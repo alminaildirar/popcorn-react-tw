@@ -5,7 +5,6 @@ import { ReactQueryDevtools } from "react-query/devtools";
 import { QueryClient, QueryClientProvider } from "react-query";
 import Movie from "./pages/Movie";
 import Home from "./pages/Home";
-import App from "./App";
 import "./index.css";
 import PopularMovies from "./pages/PopularMovies";
 import TopRatedMovies from "./pages/TopRatedMovies";
@@ -40,9 +39,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <QueryClientProvider client={queryClient}>
-    <RouterProvider router={router}>
-      <App />
-    </RouterProvider>
+    <RouterProvider router={router} />
     <ReactQueryDevtools />
   </QueryClientProvider>
 );
