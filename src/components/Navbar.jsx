@@ -17,9 +17,6 @@ const Navbar = () => {
                 alt="popcorn-logo"
               />
             </div>
-            <span className="text-white opacity-0 text-xl group-hover:opacity-100 ease-in-out duration-300">
-              popcorn
-            </span>
           </Link>
         </div>
         <div className="mr-5 flex items-center gap-6">

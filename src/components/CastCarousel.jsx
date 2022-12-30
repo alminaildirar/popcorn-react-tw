@@ -27,14 +27,14 @@ function CastCarousel({ data }) {
           className="w-full h-full overflow-y-hidden overflow-x-auto overscroll-auto scroll whitespace-nowrap scroll-smooth scrollbar-hide"
         >
           {data.map((item) => (
-            <a className="group relative inline-block text-center" href="#">
+            <div className="group relative inline-block text-center">
               <CastCarouselImage url={item.profile_path} />
               <div className="absolute top-[8px] left-[8px] w-[91%] h-[94%] bg-red-700/0 hidden z-10 text-white ease-in duration-300 group-hover:block group-hover:bg-red-700/50">
                 <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
                   {item.name}
                 </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
         <button
